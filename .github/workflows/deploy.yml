@@ -17,8 +17,8 @@ jobs:
       - name: Execute remote SSH commands using password
         uses: appleboy/ssh-action@v1
         with:
-          host: 212.2.248.65
+          host: 212.2.251.223
           username: linuxserver.io
           key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
+          port: 22
           script: whoami

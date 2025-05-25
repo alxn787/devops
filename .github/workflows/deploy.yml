@@ -19,6 +19,6 @@ jobs:
         with:
           host: 212.2.248.65
           username: linuxserver.io
-          password: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: whoami

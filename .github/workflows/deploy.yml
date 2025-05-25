@@ -18,7 +18,7 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host: 212.2.251.223
-          username: linuxserver.io
-          key: ${{ secrets.SSH_KEY }}
+          username: ubuntu
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: whoami
